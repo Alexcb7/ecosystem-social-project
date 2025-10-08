@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header className="header">
       <video autoPlay loop muted>
-        <source src="/videos/mi_video.mp4" type="video/mp4" />
+        <source src="/videos/header.mp4" type="video/mp4" />
         Tu navegador no soporta la etiqueta de video.
       </video>
 
