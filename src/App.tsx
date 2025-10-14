@@ -1,15 +1,30 @@
 import './App.css'
+import { useState, useEffect } from "react"
 import Header from './components/header'
+import Section1 from './components/section1'
+
 
 function App() {
+  const [darkMode, setDarkMode] = useState(
+    typeof window !== "undefined" && localStorage.getItem("theme") === "dark"
+  );
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("theme", darkMode ? "dark" : "light");
+      document.documentElement.classList.toggle("dark", darkMode);
+    }
+  }, [darkMode]);
+
   return (
-    <div className="bg-white dark:bg-gray-950 min-h-screen transition-colors">
+    <div className="app">
       <Header />
 
       <main className="px-8 py-10">
-        {/* Aquí irán tus secciones: Hero, Problema, Causas, Soluciones, CTA */}
+      <Section1 />
       </main>
     </div>
+   
   )
 }
 

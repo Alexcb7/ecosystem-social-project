@@ -21,7 +21,7 @@ export default function Header() {
       </video>
 
       <div className="header-content">
-        <h1 className="header-title">EcoConciencia</h1>
+        <h1 className="header-title"> Protected teh Ecosystem</h1>
 
         <nav className="nav-links">
           <a href="#problema">Problema</a>
