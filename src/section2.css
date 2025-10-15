@@ -1,0 +1,87 @@
+/* Section 2 */
+.section2 {
+  padding: 5rem 2rem; /* py-20 px-8 */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Título principal */
+.section2 > h2 {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem; /* mb-12 */
+  color: #15803d; /* text-green-700 */
+}
+
+/* Grid de cards */
+.section2 .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem; /* gap-8 */
+  max-width: 96rem; /* max-w-6xl */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .section2 .grid {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
+
+/* Cards */
+.section2 .grid > .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem; /* p-6 */
+  background-color: #111;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section2 .grid > .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Iconos de la card */
+.section2 .grid > .card svg {
+  width: 3rem; /* w-12 */
+  height: 3rem; /* h-12 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+/* Header de la card */
+.section2 .card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem; /* espacio entre título y descripción */
+}
+
+/* Título de la card */
+.card-tittle1, /* si quieres mantener la clase específica del primer card */
+.card-header .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: aqua; /* personalizable */
+  text-align: center;
+}
+
+/* Descripción de la card */
+.card-header .card-description {
+  font-size: 0.875rem;
+  color: lightblue; /* personalizable */
+  text-align: center;
+}
+
+/* Contenido de la card */
+.section2 .card-content p {
+  color: aqua; /* personalizable */
+  text-align: center;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}

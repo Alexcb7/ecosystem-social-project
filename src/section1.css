@@ -1,0 +1,193 @@
+/* Section 1 */
+.section1 {
+  padding: 80px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Titulo Gneneral */
+.titulo_section1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #1fe256;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+.section1-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+/* Cards */
+.section1-card1,
+.section1-card2,
+.section1-card3 {
+  position: relative; /* necesario para elementos absolutos si se usan */
+  width: 250px;
+  height: 55vh;
+  background-color: #111;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Botones */
+
+.cta-button1,
+.cta-button2,
+.cta-button3 {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.cta-button1:hover,
+.cta-button2:hover,
+.cta-button3:hover {
+  background-color: var(--accent-color-hover);
+}
+
+/* Header: título + descripción */
+.card-header1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* separa título y descripción sin usar margin */
+}
+
+.card-title1 {
+  color: aqua;
+  text-align: center;
+}
+
+.card-description1 {
+  color: lightblue;
+  text-align: center;
+}
+
+/* Texto de la card */
+.text-card1 {
+  color: aqua;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px; /* separa del header sin mover footer si usas flex/grid */
+}
+
+/* Footer */
+.card-footer1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* empuja el footer al final de la card */
+  width: 100%;
+}
+
+
+/* Card 2 */
+
+/* Header: título + descripción */
+.card-header2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* separa título y descripción sin usar margin */
+}
+
+.card-title2 {
+  color: aqua;
+  text-align: center;
+  /* Si quieres moverlo libremente dentro de la card: usar top absoluto */
+  /* position: absolute;
+     top: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+  */
+}
+
+.card-description2 {
+  color: lightblue;
+  text-align: center;
+}
+
+/* Texto de la card */
+.card-text2 {
+  color: aqua;
+  text-align: center;
+  padding: 10px;
+  margin-top: 0px; /* separa del header sin mover footer si usas flex/grid */
+}
+
+/* Footer */
+.card-footer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* empuja el footer al final de la card */
+  width: 100%;
+}
+
+
+
+
+/* Card 3 */
+
+/* Header: título + descripción */
+.card-header3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* separa título y descripción sin usar margin */
+}
+
+.card-title3 {
+  color: aqua;
+  text-align: center;
+  /* Si quieres moverlo libremente dentro de la card: usar top absoluto */
+  /* position: absolute;
+     top: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+  */
+}
+
+.card-description3 {
+  color: lightblue;
+  text-align: center;
+}
+
+/* Texto de la card */
+.text-card3 {
+  color: aqua;
+  text-align: center;
+  padding: 10px;
+  margin-top: 0px; /* separa del header sin mover footer si usas flex/grid */
+}
+
+/* Footer */
+.card-footer3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* empuja el footer al final de la card */
+  width: 100%;
+}
+
+
+

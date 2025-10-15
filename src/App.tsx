@@ -2,6 +2,7 @@ import './App.css'
 import { useState, useEffect } from "react"
 import Header from './components/header'
 import Section1 from './components/section1'
+import Section2 from './components/section2'
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
 
       <main className="px-8 py-10">
       <Section1 />
+      </main>
+
+      <main className='px-8 py-10'>
+      <Section2 />
       </main>
     </div>
    

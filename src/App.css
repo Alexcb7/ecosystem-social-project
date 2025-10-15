@@ -168,31 +168,3 @@ html, body {
 }
 
 
-/* Section 1 */
-
-.section1 {
-  padding: 80px 20px;  /* padding interno */
-  margin-top: 60px;    /* separación del header */
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-
-.cta-button {
-  background-color: var(--accent-color);
-  color: var(--text-color);
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
-}
-
-.cta-button:hover {
-  background-color: var(--accent-color-hover);
-}
-
-.card-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
