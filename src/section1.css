@@ -34,7 +34,7 @@
 .section1-card3 {
   position: relative; /* necesario para elementos absolutos si se usan */
   width: 250px;
-  height: 55vh;
+  height: 65vh;
   background-color: #111;
   border-radius: 12px;
   padding: 20px;
@@ -50,7 +50,7 @@
 .cta-button2,
 .cta-button3 {
   background-color: var(--accent-color);
-  color: var(--text-color);
+  color: white;
   padding: 8px 16px;
   border-radius: 8px;
   font-weight: 600;
@@ -61,7 +61,7 @@
 .cta-button1:hover,
 .cta-button2:hover,
 .cta-button3:hover {
-  background-color: var(--accent-color-hover);
+  background-color: #78C866;
 }
 
 /* Header: título + descripción */
@@ -72,8 +72,15 @@
   gap: 5px; /* separa título y descripción sin usar margin */
 }
 
+.card-image1{
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 9px;
+  margin-top: -14px;
+}
+
 .card-title1 {
-  color: aqua;
+  color: white;
   text-align: center;
 }
 
@@ -84,10 +91,10 @@
 
 /* Texto de la card */
 .text-card1 {
-  color: aqua;
+  color: white;
   text-align: center;
   padding: 10px;
-  margin-top: 20px; /* separa del header sin mover footer si usas flex/grid */
+  margin-top: 5px; /* separa del header sin mover footer si usas flex/grid */
 }
 
 /* Footer */
@@ -111,27 +118,36 @@
 }
 
 .card-title2 {
-  color: aqua;
+  color: white;
   text-align: center;
-  /* Si quieres moverlo libremente dentro de la card: usar top absoluto */
-  /* position: absolute;
-     top: 20px;
-     left: 50%;
-     transform: translateX(-50%);
-  */
+  position: relative;
+  margin-top: 3px;
+}
+
+.card-image2{
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 6px; /* ajusta hacia abajo si lo necesitas */
+  margin-top: -14px;
+  max-height: 170px; /* evita que la imagen ocupe demasiado */
+  width: 100%;
+  object-fit: cover;
+
+
 }
 
 .card-description2 {
   color: lightblue;
   text-align: center;
+  margin-top: -6px;
 }
 
 /* Texto de la card */
 .card-text2 {
-  color: aqua;
+  color: white;
   text-align: center;
   padding: 10px;
-  margin-top: 0px; /* separa del header sin mover footer si usas flex/grid */
+  margin-top: -5px; /* separa del header sin mover footer si usas flex/grid */
 }
 
 /* Footer */
@@ -157,24 +173,33 @@
 }
 
 .card-title3 {
-  color: aqua;
+  color: white;
   text-align: center;
-  /* Si quieres moverlo libremente dentro de la card: usar top absoluto */
-  /* position: absolute;
-     top: 20px;
-     left: 50%;
-     transform: translateX(-50%);
-  */
+  position: relative;
+  margin-top: 7px;
+}
+
+.card-image3{
+  width: 45vw;
+  height: 21vh;
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 6px; /* ajusta hacia abajo si lo necesitas */
+  margin-top: -14px;
+  max-height: 170px; /* evita que la imagen ocupe demasiado */
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-description3 {
   color: lightblue;
   text-align: center;
+  margin-top: -5px;
 }
 
 /* Texto de la card */
 .text-card3 {
-  color: aqua;
+  color: white;
   text-align: center;
   padding: 10px;
   margin-top: 0px; /* separa del header sin mover footer si usas flex/grid */
