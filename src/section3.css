@@ -1,0 +1,150 @@
+.section3 {
+  width: 100%;
+  height: 120vh;
+  padding: 72px 24px 150px; /* padding-bottom extra para que los hovers de abajo no se corten */
+  background-color: var(--background-color, #070707);
+  color: var(--text-color, #ffffff);
+  text-align: center;
+}
+
+.titulo_section3 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  position: relative;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #ff6b6b;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.6px;
+}
+
+.intro_section3 {
+  max-width: 880px;
+  margin: 0.5rem auto 2rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+}
+
+/* Contenedor general de hover items */
+.hover-container {
+  display: flex;
+  flex-direction: column; /* filas verticales */
+  gap: 24px; /* separación entre filas */
+  align-items: center;
+}
+
+/* Cada fila de hover items */
+.hover-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+}
+
+/* Filas específicas para estilos individuales si quieres */
+.top-row {
+  position: relative;
+  margin-top: 60px;
+}
+
+.bottom-row {
+  position: relative;
+  margin-top: 120px;
+}
+
+/* Hover items individuales */
+.hover-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-width: 260px;
+  max-width: 320px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.06);
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.14s ease, box-shadow 0.14s ease;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+
+.hover-item:hover,
+.hover-item:focus {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.55);
+  outline: none;
+}
+
+.hover-item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hover-icon {
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.03);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffd166;
+}
+
+.hover-title {
+  font-weight: 700;
+  font-size: 1.03rem;
+  color: #fff;
+}
+
+.hover-cta {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Contenido del hover */
+.hover-content {
+  max-width: 320px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(18,18,18,0.98), rgba(10,10,10,0.98));
+  border: 1px solid rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.95);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.hover-content-title {
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffb4a2;
+}
+
+.hover-content-body {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: rgba(255,255,255,0.9);
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  .hover-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .hover-item {
+    width: 92%;
+    max-width: none;
+  }
+
+  .hover-content {
+    max-width: 92vw;
+  }
+}
