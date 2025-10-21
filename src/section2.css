@@ -1,7 +1,16 @@
+.section2 {
+width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
 .section2-root {
-   width: 100%;
-   /* height: 50vh; */
-   justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
    
 }
 
@@ -22,7 +31,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
 }
 .bosques{
     padding: 10px;
@@ -52,13 +60,13 @@
 .tabs-content-bosque,
 .tabs-content-oceano,
 .tabs-content-montana {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    background-color: black;
     flex-direction: column; /* para que título y texto se apilen */
     justify-content: flex-start; /* para que empiece desde arriba */
     align-items: center;
     padding: 20px;
-    min-height: 400px; /* altura mínima para que no se corte el contenido */
 }
 
 /* Bosque Content */
@@ -163,7 +171,6 @@
 .tabs-list {
     width: auto;
     height: auto;
-  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;

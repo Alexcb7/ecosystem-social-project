@@ -4,6 +4,7 @@ import * as Tabs from '@radix-ui/react-tabs';
 
 function Section2() {
   return (
+  <section className='section2'>
     <div>
       <Tabs.Root className='section2-root' defaultValue="bosques">
         <Tabs.List className="tabs-list">
@@ -30,6 +31,7 @@ function Section2() {
         </Tabs.Content>
       </Tabs.Root>
     </div>
+  </section>
   );
 }
 
