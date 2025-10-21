@@ -15,11 +15,13 @@ width: 100%;
 }
 
 .tittle-caracteristicas {
-    background: transparent;
-    display: flex;
+  background: transparent;
+  display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 3rem;
+  position: relative;
+  margin-right: 150px;
+  font-size: 4rem;
   font-weight: 700;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -84,22 +86,23 @@ width: 100%;
     font-size: 16px;
     text-align: center;
     line-height: 1.5;
-    margin-left: 500px;
-    margin-top: 30px;
+    margin-left: 800px;
+    margin-top: 50px;
     color: white;
     border: #78c886 4px solid;
 
-    max-width: 400px;  /* ancho máximo del párrafo */
+    max-width: 450px;  /* ancho máximo del párrafo */
         /* centra horizontalmente */
 }
 
 .image-forest1 {
-    width: 30vw;
-    height: 40vh;
+    width: 40vw;
+    height: 60vh;
     position: relative;
     margin-right: 450px;
-    margin-top: -230px;
-    border-radius: 40px;
+    margin-top: -226px;
+    margin-left: -110px;
+    border-radius: 30px;
 }
 
 /* Content Oceano */
@@ -117,22 +120,23 @@ width: 100%;
     font-size: 16px;
     text-align: center;
     line-height: 1.5;
-    margin-left: 500px;
-    margin-top: 30px;
+    margin-left: 800px;
+    margin-top: 50px;
     color: white;
     border: #78c886 4px solid;
 
-    max-width: 400px;  /* ancho máximo del párrafo */
+    max-width: 450px;  /* ancho máximo del párrafo */
         /* centra horizontalmente */
 }
 
 .image-oceano1 {
-    width: 30vw;
-    height: 40vh;
+    width: 40vw;
+    height: 60vh;
     position: relative;
     margin-right: 450px;
-    margin-top: -230px;
-    border-radius: 40px;
+    margin-top: -214px;
+    margin-left: -110px;
+    border-radius: 30px;
 }
 
 /* Monatañas Content */
@@ -150,22 +154,23 @@ width: 100%;
     font-size: 16px;
     text-align: center;
     line-height: 1.5;
-    margin-left: 500px;
-    margin-top: 30px;
+    margin-left: 800px;
+    margin-top: 50px;
     color: white;
     border: #78c886 4px solid;
 
-    max-width: 400px;  /* ancho máximo del párrafo */
+    max-width: 450px;  /* ancho máximo del párrafo */
         /* centra horizontalmente */
 }
 
 .image-montana1 {
-    width: 30vw;
-    height: 40vh;
+    width: 40vw;
+    height: 60vh;
     position: relative;
     margin-right: 450px;
-    margin-top: -230px;
-    border-radius: 40px;
+    margin-top: -226px;
+    margin-left: -110px;
+    border-radius: 30px;
 }
 
 .tabs-list {
