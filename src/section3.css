@@ -8,7 +8,7 @@
 }
 
 .titulo_section3 {
-  font-size: 2.25rem;
+  font-size: 4rem;
   font-weight: 800;
   position: relative;
   margin-top: 10px;
@@ -44,12 +44,12 @@
 /* Filas específicas para estilos individuales si quieres */
 .top-row {
   position: relative;
-  margin-top: 60px;
+  margin-top: 115px;
 }
 
 .bottom-row {
   position: relative;
-  margin-top: 120px;
+  margin-top: 170px;
 }
 
 /* Hover items individuales */
@@ -58,8 +58,8 @@
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  min-width: 260px;
-  max-width: 320px;
+  min-width: 360px;
+  max-width: 420px;
   padding: 14px 18px;
   border-radius: 12px;
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
@@ -93,7 +93,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #ffd166;
+  color: #ff6b6b;
 }
 
 .hover-title {
@@ -122,7 +122,7 @@
   margin: 0 0 6px;
   font-size: 1.05rem;
   font-weight: 800;
-  color: #ffb4a2;
+  color: #ff6b6b;
 }
 
 .hover-content-body {

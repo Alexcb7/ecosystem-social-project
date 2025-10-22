@@ -93,14 +93,14 @@ html, body {
 
 /* Modo oscuro y claro */
 :root {
-  --text-color: #F0FAF0;
+  --text-color: black;
   --accent-color: #2E3A2E;
   --accent-color-hover: #1FA35A;
-  --background-color: #128843;
+  --background-color: white;
 }
 
 .dark {
-  --text-color: #f5f5f5;
+  --text-color: white;
   --accent-color: green;
   --accent-color-hover: #2da007;
   --background-color: #121212;
