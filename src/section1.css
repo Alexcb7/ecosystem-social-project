@@ -163,3 +163,24 @@
 }
 
 
+.card-footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.card-button {
+  background-color: #2e7d32; /* verde bosque */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #256428;
+}
+
