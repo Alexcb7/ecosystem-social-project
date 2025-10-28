@@ -1,9 +1,10 @@
 import React from "react";
 import "../section4.css";
 
-"use client"
-import { TrendingUp } from "lucide-react"
-import { Area, AreaChart, CartesianGrid, XAxis } from "recharts"
+"use client";
+
+import { TrendingUp } from "lucide-react";
+import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 import {
   Card,
   CardContent,
@@ -11,13 +12,14 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../components/ui/card"
+} from "../components/ui/card";
 import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "../components/ui/chart"
-export const description = "A linear area chart"
+} from "../components/ui/chart";
+
+// Datos del gráfico
 const chartData = [
   { month: "January", desktop: 186 },
   { month: "February", desktop: 305 },
@@ -25,13 +27,16 @@ const chartData = [
   { month: "April", desktop: 73 },
   { month: "May", desktop: 209 },
   { month: "June", desktop: 214 },
-]
+];
+
 const chartConfig = {
   desktop: {
     label: "Desktop",
     color: "var(--chart-1)",
   },
-} 
+};
+
+// Componente que renderiza el gráfico
 export function ChartAreaLinear() {
   return (
     <Card>
@@ -86,5 +91,15 @@ export function ChartAreaLinear() {
         </div>
       </CardFooter>
     </Card>
-  )
+  );
+}
+
+
+export default function Section4() {
+  return (
+    <section id="graficos" className="section4">
+      <h2 className="titulo_section4">Gráficos de Ecosistemas</h2>
+      <ChartAreaLinear />
+    </section>
+  );
 }

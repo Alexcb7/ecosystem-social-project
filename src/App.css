@@ -99,21 +99,21 @@ html, body {
 
 .cta-button:hover {
   transform: scale(1.05);
-  background-color: greenyellow;
+  background-color: #006600;
 }
 
 /* Modo oscuro y claro */
 :root {
   --text-color: black;
-  --accent-color: #2E3A2E;
-  --accent-color-hover: #1FA35A;
+  --accent-color: ;
+  --accent-color-hover: #006600;
   --background-color: white;
 }
 
 .dark {
   --text-color: white;
-  --accent-color: green;
-  --accent-color-hover: #2da007;
+  --accent-color: #008000;
+  --accent-color-hover: #66cc66;
   --background-color: #121212;
 }
 

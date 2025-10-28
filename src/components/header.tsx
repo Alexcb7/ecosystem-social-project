@@ -24,9 +24,9 @@ export default function Header() {
         <h1 className="header-title"> Protected the Ecosystem</h1>
 
         <nav className="nav-links">
-          <a href="#problema">Problema</a>
-          <a href="#causas">Causas</a>
-          <a href="#soluciones">Soluciones</a>
+          <a href="#problema">Tipos </a>
+          <a href="#causas">Caracteristicas</a>
+          <a href="#soluciones">Amenazas</a>
 
           <Switch checked={darkMode} onCheckedChange={setDarkMode} />
           <Button className="cta-button">Únete al cambio</Button>
