@@ -25,6 +25,7 @@ width: 100%;
   font-weight: 700;
   margin-bottom: 2rem;
   text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
   color: #1fe256;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 
@@ -83,13 +84,13 @@ width: 100%;
 }
 
 .info-content-bosque {
-    font-size: 16px;
     text-align: center;
     line-height: 1.5;
     margin-left: 770px;
     margin-top: 50px;
     color: white;
-    border: #78c886 4px solid;
+    font-size: 18px;
+    font-family: "Rozha One", sans-serif;
 
     max-width: 450px;  /* ancho máximo del párrafo */
         /* centra horizontalmente */
@@ -100,7 +101,7 @@ width: 100%;
     height: 60vh;
     position: relative;
     margin-right: 450px;
-    margin-top: -476px;
+    margin-top: -463px;
     margin-left: -110px;
     border-radius: 30px;
 }
@@ -117,13 +118,13 @@ width: 100%;
 }
 
 .info-content-oceano {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     line-height: 1.5;
     margin-left: 770px;
     margin-top: 50px;
     color: white;
-    border: #78c886 4px solid;
+    font-family: "Rozha One", sans-serif;
 
     max-width: 450px;  /* ancho máximo del párrafo */
         /* centra horizontalmente */
@@ -134,7 +135,7 @@ width: 100%;
     height: 60vh;
     position: relative;
     margin-right: 450px;
-    margin-top: -380px;
+    margin-top: -496px;
     margin-left: -110px;
     border-radius: 30px;
 }
@@ -151,13 +152,13 @@ width: 100%;
 }
 
 .info-content-montana {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     line-height: 1.5;
     margin-left: 770px;
     margin-top: 50px;
     color: white;
-    border: #78c886 4px solid;
+    font-family: "Rozha One", sans-serif;
 
     max-width: 450px;  /* ancho máximo del párrafo */
         /* centra horizontalmente */
@@ -168,7 +169,7 @@ width: 100%;
     height: 60vh;
     position: relative;
     margin-right: 450px;
-    margin-top: -426px;
+    margin-top: -450px;
     margin-left: -110px;
     border-radius: 30px;
 }
