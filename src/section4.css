@@ -1,0 +1,130 @@
+
+:root {
+  --background-color: #f8f9fa;
+  --text-color: #111;
+  --accent-color: #1fe256;
+  --card-background: #ffffff;
+  --card-title-color: #111;
+  --card-description-color: #004a7c;
+  --chart-stroke: #2e7d32;
+  --chart-fill: rgba(46, 125, 50, 0.25);
+}
+
+.dark {
+  --background-color: #0c0c0c;
+  --text-color: #f5f5f5;
+  --accent-color: #78C866;
+  --card-background: #111;
+  --card-title-color: #ffffff;
+  --card-description-color: #a8e6cf;
+  --chart-stroke: #78C866;
+  --chart-fill: rgba(120, 200, 102, 0.25);
+}
+
+.section4 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+.container-section4 {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo_section4 {
+  font-size: 2rem;
+  position: relative;
+  margin-top: -90px;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 3rem; 
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+  color: var(--accent-color);
+  line-height: 1.1;
+}
+
+.section4-card {
+  width: 60vw;
+  background-color: var(--card-background);
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section4-card-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section4-chart {
+  width: 100%;
+  max-width: 650px;
+  height: 400px;
+}
+
+.section4-card-footer {
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.footer-text {
+  display: inline-flex;
+  align-items: center;
+  font-size: 18px;
+  gap: 0.5rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .section4-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+  }
+}
+
+@media (min-width: 900px) {
+  .section4 {
+    padding: 5rem 2rem;
+  }
+
+  .titulo_section4 {
+    font-size: 3.6rem;
+  }
+
+  .section4-card {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container-section4 {
+    max-width: 1400px;
+  }
+
+  .titulo_section4 {
+    font-size: 4rem;
+    color: var(--card-title-color);
+  }
+}

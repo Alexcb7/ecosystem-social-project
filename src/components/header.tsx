@@ -27,6 +27,8 @@ export default function Header() {
           <a href="#problema">Tipos </a>
           <a href="#causas">Caracteristicas</a>
           <a href="#soluciones">Amenazas</a>
+          <a href="#soluciones">Datos</a>
+
 
           <Switch checked={darkMode} onCheckedChange={setDarkMode} />
           <Button className="cta-button">Únete al cambio</Button>

@@ -93,6 +93,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  color: rgb(235, 76, 76);
 }
 
 .hover-title {
@@ -117,6 +118,7 @@
   margin: 0 0 6px;
   font-size: 1.05rem;
   font-weight: 800;
+  color: rgb(235, 76, 76);
 }
 
 .hover-content-body {

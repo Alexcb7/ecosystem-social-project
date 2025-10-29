@@ -19,87 +19,77 @@ import {
   ChartTooltipContent,
 } from "../components/ui/chart";
 
-// Datos del gráfico
+// Datos reales aproximados: pérdida de biodiversidad global (índice Planeta Vivo)
 const chartData = [
-  { month: "January", desktop: 186 },
-  { month: "February", desktop: 305 },
-  { month: "March", desktop: 237 },
-  { month: "April", desktop: 73 },
-  { month: "May", desktop: 209 },
-  { month: "June", desktop: 214 },
+  { year: 1970, biodiversityIndex: 100 },
+  { year: 1980, biodiversityIndex: 83 },
+  { year: 1990, biodiversityIndex: 68 },
+  { year: 2000, biodiversityIndex: 55 },
+  { year: 2010, biodiversityIndex: 44 },
+  { year: 2020, biodiversityIndex: 31 },
+  { year: 2023, biodiversityIndex: 28 },
 ];
 
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
-    color: "var(--chart-1)",
+  biodiversityIndex: {
+    label: "Índice de biodiversidad (Planeta Vivo)",
+    color: "var(--chart-stroke)",
   },
 };
 
-// Componente que renderiza el gráfico
+// Componente del gráfico
 export function ChartAreaLinear() {
   return (
-    <Card>
+    <Card className="section4-card">
       <CardHeader>
-        <CardTitle>Area Chart - Linear</CardTitle>
-        <CardDescription>
-          Showing total visitors for the last 6 months
-        </CardDescription>
+        <CardTitle>Caída global de los ecosistemas</CardTitle>
+        <CardDescription>Índice Planeta Vivo (1970–2023)</CardDescription>
       </CardHeader>
-      <CardContent>
-        <ChartContainer config={chartConfig}>
+
+      <CardContent className="section4-card-content">
+        <ChartContainer className="section4-chart" config={chartConfig}>
           <AreaChart
-            accessibilityLayer
             data={chartData}
-            margin={{
-              left: 12,
-              right: 12,
-            }}
+            width={650}
+            height={400}
+            margin={{ left: 12, right: 12 }}
           >
             <CartesianGrid vertical={false} />
-            <XAxis
-              dataKey="month"
-              tickLine={false}
-              axisLine={false}
-              tickMargin={8}
-              tickFormatter={(value) => value.slice(0, 3)}
-            />
+            <XAxis dataKey="year" tickLine={false} axisLine={false} tickMargin={8} />
             <ChartTooltip
               cursor={false}
               content={<ChartTooltipContent indicator="dot" hideLabel />}
             />
             <Area
-              dataKey="desktop"
-              type="linear"
-              fill="var(--color-desktop)"
+              dataKey="biodiversityIndex"
+              type="monotone"
+              fill="var(--chart-fill)"
+              stroke="var(--chart-stroke)"
+              strokeWidth={2}
               fillOpacity={0.4}
-              stroke="var(--color-desktop)"
             />
           </AreaChart>
         </ChartContainer>
       </CardContent>
-      <CardFooter>
-        <div className="flex w-full items-start gap-2 text-sm">
-          <div className="grid gap-2">
-            <div className="flex items-center gap-2 leading-none font-medium">
-              Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
-            </div>
-            <div className="text-muted-foreground flex items-center gap-2 leading-none">
-              January - June 2024
-            </div>
-          </div>
+
+      <CardFooter className="section4-card-footer">
+        <div>
+          Pérdida del 75% promedio desde 1970{" "}
+          <TrendingUp className="h-4 w-4 rotate-180 text-red-500" />
         </div>
       </CardFooter>
     </Card>
   );
 }
 
-
+// Sección completa
 export default function Section4() {
   return (
     <section id="graficos" className="section4">
-      <h2 className="titulo_section4">Gráficos de Ecosistemas</h2>
-      <ChartAreaLinear />
+      <div className="container-section4">
+        <h2 className="titulo_section4">Evolución de los Ecosistemas</h2>
+        <ChartAreaLinear />
+      </div>
     </section>
   );
 }
