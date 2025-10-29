@@ -10,7 +10,7 @@ import Footer from './components/footer'
 
 
 function App() {
-  const [darkMode, setDarkMode] = useState(
+  const [darkMode,] = useState(
     typeof window !== "undefined" && localStorage.getItem("theme") === "dark"
   );
 
