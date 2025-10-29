@@ -198,3 +198,144 @@ width: 100%;
   box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
 }
 
+
+
+@media (max-width: 639px) {
+  .tittle-caracteristicas {
+    font-size: 2.2rem;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .tabs-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tabs-list button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .info-content-bosque,
+  .info-content-oceano,
+  .info-content-montana {
+    margin-left: 0;
+    margin-top: 20px;
+    max-width: 90%;
+    font-size: 16px;
+  }
+
+  .image-forest1,
+  .image-oceano1,
+  .image-montana1 {
+    width: 90%;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .tittle-caracteristicas {
+    font-size: 3rem;
+    margin-right: 0;
+  }
+
+  .tabs-list {
+    gap: 40px;
+  }
+
+  .tabs-list button {
+    padding: 14px 24px;
+    font-size: 17px;
+  }
+
+  .info-content-bosque,
+  .info-content-oceano,
+  .info-content-montana {
+    margin-left: 0;
+    margin-top: 30px;
+    max-width: 70%;
+    font-size: 17px;
+  }
+
+  .image-forest1,
+  .image-oceano1,
+  .image-montana1 {
+    width: 70%;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .tittle-caracteristicas {
+    font-size: 3.5rem;
+    margin-right: 20px;
+  }
+
+  .tabs-list {
+    gap: 50px;
+  }
+
+  .tabs-list button {
+    padding: 16px 26px;
+    font-size: 18px;
+  }
+
+  .info-content-bosque,
+  .info-content-oceano,
+  .info-content-montana {
+    margin-left: 400px; /* se puede ajustar según diseño */
+    margin-top: 40px;
+    max-width: 50%;
+    font-size: 18px;
+  }
+
+  .image-forest1,
+  .image-oceano1,
+  .image-montana1 {
+    width: 50%;
+    height: auto;
+    margin-left: -50px; /* ajusta según tu layout */
+    margin-top: -50px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .tittle-caracteristicas {
+    font-size: 4rem;
+    margin-right: 50px;
+  }
+
+  .tabs-list {
+    gap: 60px;
+  }
+
+  .tabs-list button {
+    padding: 18px 29px;
+    font-size: 18px;
+  }
+
+  .info-content-bosque,
+  .info-content-oceano,
+  .info-content-montana {
+    margin-left: 770px;
+    margin-top: 50px;
+    max-width: 450px;
+  }
+
+  .image-forest1,
+  .image-oceano1,
+  .image-montana1 {
+    width: 40vw;
+    height: 60vh;
+    margin-left: -110px;
+  }
+}

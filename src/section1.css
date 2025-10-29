@@ -1,8 +1,4 @@
-/* ===============================
-   🎨 Variables de color (modo claro / oscuro)
-   =============================== */
 
-/* 🌞 Modo claro por defecto */
 :root {
   --background-color: #f8f9fa;
   --text-color: #111;
@@ -14,7 +10,7 @@
   --button-hover-bg: #256428;
 }
 
-/* 🌚 Modo oscuro */
+
 .dark {
   --background-color: #0c0c0c;
   --text-color: #f5f5f5;
@@ -30,28 +26,25 @@
 
 
 
-/* Small global helpers local to esta sección */
 .container-section1 {
   width: 100%;
-  max-width: 1200px; /* controla cuánto se estira en pantallas grandes/proyector */
+  max-width: 1200px; 
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* Reset / box-sizing local (si ya tienes global, puedes quitarlo) */
 .section1, .section1 * { box-sizing: border-box; }
 
 /* Sección principal */
 .section1 {
   width: 100%;
-  /* evitar height en vh para que no se rompa entre pantallas */
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
-/* Titulo General - tipografía responsiva */
+
 .titulo_section1 {
   display: flex;
   justify-content: center;
@@ -66,7 +59,6 @@
   padding: 0 0.5rem;
 }
 
-/* Grid responsiva para las cards: auto-fit hace que se adapten a cualquier ancho */
 .section1-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -76,10 +68,10 @@
   padding: 1rem 0;
 }
 
-/* Card base (usada para las tres) - evita valores fijos en px en ancho/alto */
+
 .section1-card {
   width: 100%;
-  max-width: 360px; /* control para proyectores grandes */
+  max-width: 360px; 
   min-height: 380px;
   border-radius: 12px;
   padding: 1.25rem;
@@ -92,22 +84,21 @@
   transition: transform .18s ease, box-shadow .18s ease;
 }
 
-/* hover sutil (en pantallas con puntero) */
 @media (hover: hover) and (pointer: fine) {
   .section1-card:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(0,0,0,0.45); }
 }
 
-/* Imagen: uso de aspect-ratio y full width para que nunca se deforme */
+
 .card-image {
   width: 100%;
-  aspect-ratio: 16 / 9; /* mantiene proporción constante */
+  aspect-ratio: 16 / 9; 
   object-fit: cover;
   border-radius: 12px;
   display: block;
   margin-bottom: 0.75rem;
 }
 
-/* Header: título + descripción (reutilizable) */
+
 .card-header {
   display: flex;
   flex-direction: column;
@@ -134,7 +125,7 @@
   margin-top: 0.25rem;
   font-size: clamp(0.9rem, 1.1vw + 0.05rem, 1rem);
   line-height: 1.4;
-  flex: 1 1 auto; /* permite que el contenido ocupe el espacio y empuje el footer */
+  flex: 1 1 auto; 
 }
 
 /* Footer */
@@ -146,7 +137,7 @@
   width: 100%;
 }
 
-/* CTA (si las usas dentro de footer) */
+
 .cta-button {
   background-color: var(--accent-color);
   color: white;
@@ -177,8 +168,7 @@
 }
 
 @media (min-width: 1600px) {
-  /* Breakpoint explícito para proyectores / pantallas muy grandes:
-     limitamos el contenedor y aumentamos separación sin estirar el contenido */
+
   .container-section1 { max-width: 1400px; padding-left: 3rem; padding-right: 3rem; }
   .section1 { padding-top: 5rem; padding-bottom: 5rem; }
   .titulo_section1 { font-size: 3.4rem; }
@@ -194,7 +184,7 @@
 }
 
 .card-button {
-  background-color: #2e7d32; /* verde bosque */
+  background-color: #2e7d32; 
   color: white;
   border: none;
   border-radius: 6px;

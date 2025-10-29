@@ -115,6 +115,8 @@
 
   .section4-card {
     max-width: 800px;
+        position: relative;
+        margin-top: 70px;
   }
 }
 

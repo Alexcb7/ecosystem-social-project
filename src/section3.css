@@ -7,13 +7,13 @@
   text-align: center;
 }
 
+/* Título principal */
 .titulo_section3 {
-   background: transparent;
   display: flex;
   justify-content: center;
   text-align: center;
   position: relative;
-  font-size: 4rem;
+  font-size: clamp(2rem, 4vw + 1rem, 4rem); /* responsive */
   font-weight: 700;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -21,17 +21,18 @@
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
 
+/* Texto introductorio */
 .intro_section3 {
   max-width: 880px;
   margin: 0.5rem auto 2rem;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.2vw + 0.2rem, 1rem); /* responsive */
 }
 
 /* Contenedor general de hover items */
 .hover-container {
   display: flex;
-  flex-direction: column; /* filas verticales */
-  gap: 24px; /* separación entre filas */
+  flex-direction: column; 
+  gap: 24px; 
   align-items: center;
 }
 
@@ -43,7 +44,7 @@
   gap: 1rem 1.5rem;
 }
 
-/* Filas específicas para estilos individuales si quieres */
+/* Filas específicas */
 .top-row {
   position: relative;
   margin-top: 115px;
@@ -126,7 +127,6 @@
   line-height: 1.4;
 }
 
-/* Responsive */
 @media (max-width: 820px) {
   .hover-row {
     flex-direction: column;
@@ -141,5 +141,12 @@
 
   .hover-content {
     max-width: 92vw;
+  }
+  .titulo_section3 {
+    font-size: clamp(1.8rem, 6vw + 1rem, 3rem);
+  }
+
+  .intro_section3 {
+    font-size: clamp(0.85rem, 3vw + 0.2rem, 1rem);
   }
 }
