@@ -1,17 +1,24 @@
+:root {
+  --background-color: #e6f4ea;
+  --text-color: #111;
+  --accent-color: #2e7d32;
+  --button-bg: #1a4d2e;
+  --button-hover-bg: #006600;
+  --button-active-bg: #66cc66;
+}
+
 .section2 {
-width: 100%;
+  width: 100%;
   height: 100vh;
   background-color: var(--background-color);
   color: var(--text-color);
 }
-
 
 .section2-root {
   width: 100%;
   height: 100vh;
   background-color: var(--background-color);
   color: var(--text-color);
-   
 }
 
 .tittle-caracteristicas {
@@ -27,156 +34,19 @@ width: 100%;
   text-transform: uppercase;
   font-family: "Rubik", sans-serif;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-
-}
-.tabs-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.bosques{
-    padding: 10px;
-    color: white;
-    padding: 50px;
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.oceanos {
-    color: white;
-    padding: 10px;
-    padding: 50px;
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.montanas {
-    padding: 50px;
-    font-weight: 700;
-    font-size: 30px;
-
-}
-
-
-.tabs-content-bosque,
-.tabs-content-oceano,
-.tabs-content-montana {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /* para que título y texto se apilen */
-    justify-content: flex-start; /* para que empiece desde arriba */
-    align-items: center;
-    padding: 20px;
-}
-
-/* Bosque Content */
-
-.tittle-content-bosque{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.info-content-bosque {
-    text-align: center;
-    line-height: 1.5;
-    margin-left: 770px;
-    margin-top: 50px;
-    font-size: 18px;
-    font-family: "Rozha One", sans-serif;
-
-    max-width: 450px;  /* ancho máximo del párrafo */
-        /* centra horizontalmente */
-}
-
-.image-forest1 {
-    width: 40vw;
-    height: 60vh;
-    position: relative;
-    margin-right: 450px;
-    margin-top: -450px;
-    margin-left: -110px;
-    border-radius: 30px;
-}
-
-/* Content Oceano */
-
-.tittle-content-oceano{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.info-content-oceano {
-    font-size: 18px;
-    text-align: center;
-    line-height: 1.5;
-    margin-left: 770px;
-    margin-top: 50px;
-    font-family: "Rozha One", sans-serif;
-
-    max-width: 450px;  /* ancho máximo del párrafo */
-        /* centra horizontalmente */
-}
-
-.image-oceano1 {
-    width: 40vw;
-    height: 60vh;
-    position: relative;
-    margin-right: 450px;
-    margin-top: -470px;
-    margin-left: -110px;
-    border-radius: 30px;
-}
-
-/* Monatañas Content */
-
-.tittle-content-montana{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.info-content-montana {
-    font-size: 18px;
-    text-align: center;
-    line-height: 1.5;
-    margin-left: 770px;
-    margin-top: 50px;
-    font-family: "Rozha One", sans-serif;
-
-    max-width: 450px;  /* ancho máximo del párrafo */
-        /* centra horizontalmente */
-}
-
-.image-montana1 {
-    width: 40vw;
-    height: 60vh;
-    position: relative;
-    margin-right: 450px;
-    margin-top: -430px;
-    margin-left: -110px;
-    border-radius: 30px;
 }
 
 .tabs-list {
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px; /* <-- separa los botones */
+  gap: 60px;
 }
 
 .tabs-list button {
-  background-color: #1a4d2e;
+  background-color: var(--button-bg);
   color: white;
   border: none;
   border-radius: 8px;
@@ -189,153 +59,67 @@ width: 100%;
 
 .tabs-list button:hover,
 .tabs-list button:focus {
-  background-color: #006600;
+  background-color: var(--button-hover-bg);
   transform: scale(1.05);
 }
 
 .tabs-list button[data-state="active"] {
-  background-color: #66cc66;
+  background-color: var(--button-active-bg);
   box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
 }
 
-
-
-@media (max-width: 639px) {
-  .tittle-caracteristicas {
-    font-size: 2.2rem;
-    margin-right: 0;
-    margin-bottom: 1.5rem;
-  }
-
-  .tabs-list {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .tabs-list button {
-    padding: 12px 20px;
-    font-size: 16px;
-  }
-
-  .info-content-bosque,
-  .info-content-oceano,
-  .info-content-montana {
-    margin-left: 0;
-    margin-top: 20px;
-    max-width: 90%;
-    font-size: 16px;
-  }
-
-  .image-forest1,
-  .image-oceano1,
-  .image-montana1 {
-    width: 90%;
-    height: auto;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 20px;
-  }
+.bosques,
+.oceanos,
+.montanas {
+  color: white;
+  padding: 50px;
+  font-weight: 700;
+  font-size: 30px;
 }
 
-
-@media (min-width: 640px) and (max-width: 1023px) {
-  .tittle-caracteristicas {
-    font-size: 3rem;
-    margin-right: 0;
-  }
-
-  .tabs-list {
-    gap: 40px;
-  }
-
-  .tabs-list button {
-    padding: 14px 24px;
-    font-size: 17px;
-  }
-
-  .info-content-bosque,
-  .info-content-oceano,
-  .info-content-montana {
-    margin-left: 0;
-    margin-top: 30px;
-    max-width: 70%;
-    font-size: 17px;
-  }
-
-  .image-forest1,
-  .image-oceano1,
-  .image-montana1 {
-    width: 70%;
-    height: auto;
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 20px;
-  }
+.tabs-content-bosque,
+.tabs-content-oceano,
+.tabs-content-montana {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
 }
 
-
-@media (min-width: 1024px) and (max-width: 1599px) {
-  .tittle-caracteristicas {
-    font-size: 3.5rem;
-    margin-right: 20px;
-  }
-
-  .tabs-list {
-    gap: 50px;
-  }
-
-  .tabs-list button {
-    padding: 16px 26px;
-    font-size: 18px;
-  }
-
-  .info-content-bosque,
-  .info-content-oceano,
-  .info-content-montana {
-    margin-left: 400px; /* se puede ajustar según diseño */
-    margin-top: 40px;
-    max-width: 50%;
-    font-size: 18px;
-  }
-
-  .image-forest1,
-  .image-oceano1,
-  .image-montana1 {
-    width: 50%;
-    height: auto;
-    margin-left: -50px; /* ajusta según tu layout */
-    margin-top: -50px;
-  }
+.tittle-content-bosque,
+.tittle-content-oceano,
+.tittle-content-montana {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
 }
 
-@media (min-width: 1600px) {
-  .tittle-caracteristicas {
-    font-size: 4rem;
-    margin-right: 50px;
-  }
-
-  .tabs-list {
-    gap: 60px;
-  }
-
-  .tabs-list button {
-    padding: 18px 29px;
-    font-size: 18px;
-  }
-
-  .info-content-bosque,
-  .info-content-oceano,
-  .info-content-montana {
-    margin-left: 770px;
-    margin-top: 50px;
-    max-width: 450px;
-  }
-
-  .image-forest1,
-  .image-oceano1,
-  .image-montana1 {
-    width: 40vw;
-    height: 60vh;
-    margin-left: -110px;
-  }
+.info-content-bosque,
+.info-content-oceano,
+.info-content-montana {
+  text-align: center;
+  line-height: 1.5;
+  margin-left: 770px;
+  margin-top: 50px;
+  font-size: 18px;
+  font-family: "Rozha One", sans-serif;
+  max-width: 450px;
 }
+
+.image-forest1,
+.image-oceano1,
+.image-montana1 {
+  width: 40vw;
+  height: 60vh;
+  position: relative;
+  margin-right: 450px;
+  margin-top: -450px; /* Ajusta según la imagen */
+  margin-left: -110px;
+  border-radius: 30px;
+}
+

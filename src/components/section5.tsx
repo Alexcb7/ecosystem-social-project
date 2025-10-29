@@ -1,4 +1,4 @@
-
+import React from 'react';
 import '../section5.css';
 import { Globe2 } from 'lucide-react'; // icono de la tierra
 
