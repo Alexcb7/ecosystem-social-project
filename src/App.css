@@ -105,7 +105,7 @@ html, body {
 /* Modo oscuro y claro */
 :root {
   --text-color: black;
-  --accent-color: ;
+  --accent-color: white;
   --accent-color-hover: #006600;
   --background-color: white;
 }

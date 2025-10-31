@@ -111,14 +111,32 @@
   max-width: 450px;
 }
 
-.image-forest1,
-.image-oceano1,
-.image-montana1 {
+.image-forest1{
+  width: 40vw;
+  height: 60vh;
+  position: relative;
+  margin-right: 450px;
+  margin-top: -437px; /* Ajusta según la imagen */
+  margin-left: -110px;
+  border-radius: 30px;
+}
+
+.image-oceano1 {
   width: 40vw;
   height: 60vh;
   position: relative;
   margin-right: 450px;
   margin-top: -450px; /* Ajusta según la imagen */
+  margin-left: -110px;
+  border-radius: 30px;
+}
+
+.image-montana1{
+  width: 40vw;
+  height: 60vh;
+  position: relative;
+  margin-right: 450px;
+  margin-top: -420px; /* Ajusta según la imagen */
   margin-left: -110px;
   border-radius: 30px;
 }

@@ -27,7 +27,7 @@ export default function Header() {
           <a href="#problema">Tipos </a>
           <a href="#causas">Caracteristicas</a>
           <a href="#soluciones">Amenazas</a>
-          <a href="#soluciones">Datos</a>
+          <a href="#soluciones">El Dato</a>
 
 
           <Switch checked={darkMode} onCheckedChange={setDarkMode} />
