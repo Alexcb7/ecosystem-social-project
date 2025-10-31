@@ -107,12 +107,14 @@
 
   .titulo_section4 {
     font-size: 3.6rem;
+    position: relative;
+    margin-top: 40px;
   }
 
   .section4-card {
         max-width: 800px;
         position: relative;
-        margin-top: 50px;
+        margin-top: 100px;
 
   }
 }

@@ -32,7 +32,7 @@ const chartData = [
 
 const chartConfig = {
   biodiversityIndex: {
-    label: "Índice de biodiversidad (Planeta Vivo)",
+    label: "Índice de biodiversidad",
     color: "var(--chart-stroke)",
   },
 };
@@ -40,7 +40,7 @@ const chartConfig = {
 // Componente del gráfico
 export function ChartAreaLinear() {
   return (
-    <Card className="section4-card">
+      <Card className="section4-card">
       <CardHeader>
         <CardTitle>Caída global de los ecosistemas</CardTitle>
         <CardDescription>Índice Planeta Vivo (1970–2023)</CardDescription>
